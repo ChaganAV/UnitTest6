@@ -1,16 +1,12 @@
-package ru.gb;
+package ru.gb.model;
 
-import ru.gb.model.App;
-import ru.gb.model.Calculation;
 import ru.gb.repositories.NumberRepository;
 import ru.gb.services.NumberService;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class UnitTest6Application {
-    public static void main(String[] args) {
+public class App {
+    public void run() {
         System.out.println("Подсчет среднего значения списка чисел");
         NumberRepository numberRepository = new NumberRepository();
         NumberService numberService = new NumberService(numberRepository);

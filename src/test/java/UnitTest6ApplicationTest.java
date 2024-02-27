@@ -1,17 +1,17 @@
-package ru.gb;
-
-import ru.gb.model.App;
+import org.junit.jupiter.api.Test;
 import ru.gb.model.Calculation;
 import ru.gb.repositories.NumberRepository;
 import ru.gb.services.NumberService;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class UnitTest6Application {
-    public static void main(String[] args) {
-        System.out.println("Подсчет среднего значения списка чисел");
+public class UnitTest6ApplicationTest {
+    @Test
+    public void mainTest(){
+//        List<Number> numbers1 = Arrays.asList(1,4,6,45,23);
+//        List<Number> numbers2 = Arrays.asList(3,6,24,64,1);
+//        List<Number> numbers3 = Arrays.asList(3,64,23,6,2);
         NumberRepository numberRepository = new NumberRepository();
         NumberService numberService = new NumberService(numberRepository);
         List<Number> numbers1 = numberService.getNumbers();
