@@ -1,8 +1,5 @@
 import org.junit.jupiter.api.Test;
 import ru.gb.model.Calculation;
-import ru.gb.repositories.IRepository;
-import ru.gb.repositories.NumberRepository;
-import ru.gb.services.NumberService;
 
 import java.util.Arrays;
 import java.util.List;
