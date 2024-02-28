@@ -11,9 +11,15 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 public class NumberRepositoryTest {
+    /**
+     * репозиторий
+     */
     private NumberRepository numberRepository = new NumberRepository();
+    /**
+     * mock заглушка на сервис
+     */
     private NumberService numberServiceMock = mock(NumberService.class);
-    Calculation calculation = new Calculation();
+    //Calculation calculation = new Calculation();
     @Test
     public void averageNumberServiceTest(){
         // pre
